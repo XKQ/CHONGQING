@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>重庆仙女山</title>
+<link type="text/css" rel="stylesheet" href="https://openlayers.org/en/v4.3.1/css/ol.css" />
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<div class="map" id="map"></div>
+<div class="funcon">
+	<span class="spancon">日期：</span>
+	<span class="spancon"><input type="date" id="day" onchange="dateChange(this);" />&nbsp;&nbsp;</span>
+	<span class="spancon">时间：</span>
+	<span class="spancon" id="time">00:00</span>
+	<div class="scale_panel smdiv">
+		<span class="r">23:59</span>00:00
+        <div class="scale" id="bar">
+                <div></div>
+                <span id="btn"></span>
+        </div>
+	</div>
+	<div class="smdiv">
+		<input type="checkbox" id="buschk" onclick="buschkClick(this)" checked="checked" />公交车
+		<button onclick="playback(500);">回放</button>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://openlayers.org/en/v4.3.1/build/ol.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
